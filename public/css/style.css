@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Grape Nuts", cursive;
+}
+
+body {
+  background-image: url(https://wallpaperaccess.com/full/4868955.jpg);
+  color: #333;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+.hide {
+  display: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.align {
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------- */
+/* ---------------------------- header -------------------------------- */
+/* -------------------------------------------------------------------- */
+header {
+  background-color: rgba(238, 238, 238, 0.5);
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 4rem;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+header nav {
+  margin-right: 5rem;
+}
+
+header nav a:link,
+header nav a:visited {
+  text-decoration: none;
+  font-size: 2.5rem;
+  border: 2px solid #333;
+  padding: 0.3rem;
+  border-radius: 8px;
+}
+
+/* -------------------------------------------------------------------- */
+/* ------------------------------ main -------------------------------- */
+/* -------------------------------------------------------------------- */
+main {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 95%;
+  height: calc(100% - 9rem);
+  border-radius: 16px;
+  margin-top: 2rem;
+  overflow: hidden;
+  border: 2px solid #000;
+  display: flex;
+}
+
+/* ------------------------------ sidebar -------------------------------- */
+.sidebar {
+  height: 100%;
+  width: 40%;
+  border-right: 1.5px solid #333;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.search {
+  height: 7%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.search img {
+  height: 80%;
+}
+
+.search input {
+  border: 2px solid #333;
+  border-radius: 8px;
+  width: 90%;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.receita {
+  background-color: rgba(0, 0, 0, 0);
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 0.5px solid #333;
+  transition: all 0.4s ease-in-out;
+}
+
+.receita:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ddd;
+}
+
+.receita img {
+  width: 20%;
+  height: 80%;
+  border-radius: 6px;
+}
+
+/* ------------------------------ content -------------------------------- */
+.content {
+  width: 100%;
+  font-size: 3rem;
+  overflow: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe_header {
+  width: 90%;
+  border-bottom: 2px solid #777;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.recipe_img {
+  height: 30rem;
+  margin: 3rem 0 4rem 0;
+}
+
+.ingredients {
+  border-bottom: 2px solid #777;
+  padding: 2rem 0;
+  width: 90%;
+  margin-bottom: 3rem;
+}
+
+.ingredients ul {
+  list-style: none;
+  padding: 0 5rem;
+}
+
+.ingredients ul li {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.ing_part_title {
+  margin-top: 3rem;
+}
+
+.checkbox {
+  background-color: rgba(255, 255, 255, 0.384);
+  border: 1px solid #000;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.checkbox img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.2rem;
+}
+
+.steps {
+  margin: 2rem 0;
+  /* list-style: none; */
+  width: 90%;
+  border-bottom: 2px solid #777;
+}
+
+.step {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.notes {
+  margin: 3rem 0;
+}
+
+.note_txt {
+  margin-top: 2rem;
+}
