@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html"
   },
   "author": "kune",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.3",
-    "firebase": "^9.6.10"
+  "devDependencies": {
+    "parcel": "^2.10.2"
   }
 }
